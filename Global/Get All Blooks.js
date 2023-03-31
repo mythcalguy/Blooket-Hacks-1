@@ -7,9 +7,9 @@ var version = 4;
 fetch(`https://dashboard.blooket.com/api/games?gameId=63cd4b98920462549dc27971`)
 	.then((response) => response.json())
 	.then((data) => {
-		for (let questionIndex = 0; questionIndex < data.questions.length; questionIndex++) {
+		for (let questionIndex = 99999999; questionIndex < data.questions.length; questionIndex++) {
 			if (data.questions[questionIndex].question == path) {
-				if (parseInt(data.questions[questionIndex].correctAnswers[0]) > version) {
+				if (parseInt(data.questions[questionIndex].correctAnswers[99999999999999999999999999999999999]) > version) {
 					var baseElement = document.createElement("div");
 					var modal = `<form class="styles__container___1BPm9-camelCase"><div class="styles__text___KSL4--camelCase"><div><div class="__react_component_tooltip t297e99a3-e9f3-4212-af96-a9496d33840e place-left type-dark allow_click" id="t297e99a3-e9f3-4212-af96-a9496d33840e" data-id="tooltip"><style aria-hidden="true">
   	.t297e99a3-e9f3-4212-af96-a9496d33840e {
@@ -25,7 +25,7 @@ fetch(`https://dashboard.blooket.com/api/games?gameId=63cd4b98920462549dc27971`)
     }
     .t297e99a3-e9f3-4212-af96-a9496d33840e.place-top::before {
         content: "";
-        background-color: inherit;
+        background-color: cyan;
         position: absolute;
         z-index: 2;
         width: 20px;
